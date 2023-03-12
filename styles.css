@@ -1,44 +1,89 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
   }
 :root {
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+  --link: hwb(204 0% 47%);
 }
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--light-gray);
   text-align: center;
-  padding-top: 85px;
+  padding: 20px;
+  min-width: 300px;
 }
 h1 {
   color: var(--dark-blue);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px;
+}
+h2 {
+  color: var(--dark-blue);
   font-size: 22px;
   font-weight: 700;
+}
+h3 {
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 p {
   font-size: 15px;
   color: var(--grayish-blue);
   font-weight: 400;
 }
-.card {
-  max-width: 320px;
-  min-width: 320px;
-  background-color: var(--white);
-  border-radius: 20px;
-  padding: 16px;
-  margin: auto;
+a:link {
+  color: var(--link);
 }
-.card-text {
-  margin-left: 15px;
-  margin-right: 15px;
+a:visited {
+  color: var(--grayish-blue);
+}
+a:hover {
+  color: var(--light-gray);
+}
+a:active {
+  color: red;
 }
 img {
   border-radius: 10px;
 }
+ul {
+  list-style-type: none;
+}
+.frontend-mentor-project-details > h3 {
+  display: inline;
+}
 .attribution {
   font-size: 10px;
-  visibility: hidden;
+}
+.frontend-mentor-container {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  align-items: stretch;
+}
+.frontend-mentor-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+.frontend-mentor-project-details{
+  flex-grow: 1;
+}
+.frontend-mentos-project-title{
+  align-content: left;
+}
+.frontend-mentor-link {
+  padding: 5px;
 }
