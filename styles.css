@@ -58,6 +58,11 @@ img {
 ul {
   list-style-type: none;
 }
+.frontend-mentor-project-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .frontend-mentor-project-details > h3 {
   display: inline;
 }
@@ -68,7 +73,7 @@ ul {
   background-color: var(--white);
   border-radius: 20px;
   padding: 20px;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   align-items: stretch;
 }
@@ -78,11 +83,11 @@ ul {
   justify-content: space-between;
   margin: 10px;
 }
-.frontend-mentor-project-details{
-  flex-grow: 1;
-}
+
 .frontend-mentos-project-title{
   align-content: left;
+  flex-grow: 1;
+  text-align: left;
 }
 .frontend-mentor-link {
   padding: 5px;
