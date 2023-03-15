@@ -172,6 +172,11 @@ button {
     width: 100%;
     text-align: left;
 }
+.attribution {
+    text-align: center;
+    font-size: 10px;
+    visibility: hidden;
+}
 
 @media screen and (min-width: 600px) {
     main {
