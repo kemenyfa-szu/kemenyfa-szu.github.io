@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* PALETTE */
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --clr: #262f38;
+    --badge-bg-clr: hsl(210, 19%, 18%);
+    --body-bg-clr: hsl(228, 11%, 9%);
+    --panel-bg-color: hsl(215, 27%, 12%);
+
+    /* HSL VALUES */
+    --orange: 25, 97%, 53%;
+    --white: 0, 0%, 100%;
+    --light-grey: 217, 12%, 63%;
+    --medium-grey: 216, 12%, 54%;
+    --dark-blue: 213, 19%, 18%;
+    --very-dark-blue: 216, 12%, 8%;
+
+    /* COLORS */
+    --orange-clr: hsl(var(--orange));
+    --white-clr: hsl(var(--white));
+    --light-grey-clr: hsl(var(--light-grey));
+    --medium-grey-clr: hsl(var(--medium-grey));
+    --dark-blue-clr: hsl(var(--dark-blue));
+    --very-dark-blue-clr: hsl(var(--very-dark-blue));
+
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--body-bg-clr);
+    color: var(--white-clr);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+p {
+    color: var(--medium-grey-clr);
+    font-weight: 400;
+    line-height: 1.6em;
+}
+img {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 0.2rem;
+}
+button {
+    border: none;
+    padding: 0.25rem;
+}
+
+.circle {
+    background-color: var(--dark-blue-clr);
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--panel-bg-color);
+    border-radius: 2rem;
+    max-width: 25.5rem;
+    padding-right: 2.25rem;
+}
+.rate-panel {
+    gap: 1.75rem;
+}
+
+.rating-title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+.thank-you-panel {
+    display: none;
+    align-items: center;
+    padding: 3rem 2.25rem;
+}
+.rate-btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+.rate-btn {
+    border: none;
+    color: hsl(var(--light-grey));
+    font-size: 15px;
+    font-weight: 400;
+}
+.rate-btn:hover {
+    background-color: var(--orange-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+}
+
+.pressed {
+    background-color: var(--light-grey-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+}
+
+.submit-btn {
+    height: 2.75rem;
+    font-size: 15px;
+    background-color: var(--orange-clr);
+    border-radius: 1.375rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white-clr);
+}
+.submit-btn:hover {
+    background-color: var(--white-clr);
+    color: var(--orange-clr);
+    cursor: pointer;
+}
+.feedback {
+    text-align: center;
+    background-color: var(--dark-blue-clr);
+    color: var(--orange-clr);
+    height: 2em;
+    padding: 0.375em 1.25rem;
+    border-radius: 1em;
+    margin-bottom: 2rem;
+}
+
+.thank-you-panel .rating-title,
+.thank-you-panel .thank-you-text {
+    text-align: center;
+}
+.thank-you-favicon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px){
+    main {
+        align-items: flex-start;
+        padding: 1.5rem;
+        padding-top: 10rem;
+    }
+    .container {
+        border-radius: 1rem;
+        padding: 2rem 1.25rem;
+    }
+    .rate-panel {
+        gap: 1rem;
+    }
+    .circle {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+    .rating-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+    p {
+        color: var(--medium-grey-clr);
+        font-size: 0.95em;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+    }
+    .thank-you-favicon {
+        width: 145px;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .feedback {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+
+}

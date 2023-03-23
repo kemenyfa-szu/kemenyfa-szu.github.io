@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section class="rate-us">
+        <article class="container rate-panel" id="rate-panel">
+          <img
+            class="rate-favicon circle"
+            src="./images/icon-star.svg"
+            alt="star icon"
+            width="32"
+            height="32"
+          />
+          <!-- Rating state start -->
+          <div class="panel-text">
+            <h3 class="rating-title">How did we do?</h3>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <ul class="rate-btn-container">
+            <li><button class="rate-btn circle">1</button></li>
+            <li><button class="rate-btn circle">2</button></li>
+            <li><button class="rate-btn circle">3</button></li>
+            <li><button class="rate-btn circle">4</button></li>
+            <li><button class="rate-btn circle">5</button></li>
+          </ul>
+          <button class="submit-btn" id="submit-button">Submit</button>
+          <!-- Rating state end -->
+        </article>
+        <article class="container thank-you-panel" id="thank-you-panel">
+          <!-- Thank you state start -->
+          <img
+            class="thank-you-favicon"
+            src="./images/illustration-thank-you.svg"
+            alt="data received"
+            width="162"
+            height="108"
+          />
+          <p class="feedback">
+            You selected <span id="selected-rate"></span> out of 5
+          </p>
+          <div class="panel-text">
+            <h3 class="rating-title">Thank you!</h3>
+            <p class="thank-you-text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+          <!-- Thank you state end -->
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/kemenyfa-szu"
+          target="_blank"
+          >Your Name Here</a
+        >.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
