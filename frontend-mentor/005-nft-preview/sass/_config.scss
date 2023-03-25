@@ -1,0 +1,23 @@
+@use "sass:color";
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$translucent-cyan: color.adjust($cyan, $alpha: -0.5);
+$body-bg-dark-blue: hsl(217, 54%, 11%);
+$card-bg-dark-blue: hsl(216, 50%, 16%);
+$line-dark-blue: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$shadow-black: hsla(0, 0%, 0%, 0.25);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $body-bg-dark-blue;
+}

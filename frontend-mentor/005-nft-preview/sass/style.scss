@@ -1,0 +1,189 @@
+@use "./config" as *;
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 0.25rem;
+}
+
+h1,
+h2 {
+    display: none;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+}
+
+p {
+    color: $soft-blue;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+hr {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+a:hover,
+a:active {
+    color: $cyan;
+}
+
+.nft-card-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nft-card {
+    background-color: $card-bg-dark-blue;
+    max-width: 350px;
+    padding: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 100px $shadow-black;
+}
+.preview-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+.nft-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: $translucent-cyan;
+    border-radius: 0.5rem;
+}
+.preview-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.sale-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.65rem;
+}
+.misc-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+.price {
+    color: $cyan;
+    font-weight: 700;
+}
+.author-divider {
+    border-top: 1px solid $line-dark-blue;
+    margin-bottom: 0.3rem;
+}
+.nft-author {
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+    p {
+        font-weight: 300;
+    }
+    .avatar  {
+        width: 1.8rem;
+        height: auto;
+        border: 1px solid $white;
+        border-radius: 50%;
+    }
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+color: hsl(228, 71%, 66%);
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 17px;
+    }
+    main {
+        align-items: flex-start;
+        padding: 3.5rem 1.4rem;
+    }
+    .nft-card {
+        padding-top: 1.45rem;
+    }
+    .preview-container {
+        margin-bottom: 0.85rem;
+    }
+
+    h3 {
+        letter-spacing: 0.8px;
+        margin-bottom: 0.3rem;
+    }
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+    .sale-info {
+        margin-bottom: 0.3rem;
+    }
+    .author-divider {
+        margin-bottom: 0.4rem;
+    }
+    .nft-author {
+        margin-bottom: 0.15rem;
+        p {
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        .avatar {
+            width: 2rem;
+        }
+    }
+}

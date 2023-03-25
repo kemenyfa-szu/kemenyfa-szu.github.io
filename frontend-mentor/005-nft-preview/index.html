@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main>
+      <h1>NFT Browser</h1>
+      <section class="nft-card-collection">
+        <h2>NFTs for sale</h2>
+        <article class="nft-card">
+          <div class="preview-container">
+            <img
+              src="./images/image-equilibrium.jpg"
+              alt="NFT - Title: Equilibrium"
+              class="nft-image"
+              width="604"
+              height="604"
+            />
+            <div class="overlay">
+              <a href="#">
+                <img
+                  src="./images/icon-view.svg"
+                  alt="View icon"
+                  class="view-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <h3><a href="#">Equilibrium #3429</a></h3>
+          <p class="description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="sale-info">
+            <div class="misc-info price-container">
+              <img
+                src="./images/icon-ethereum.svg"
+                alt="Ethereum icon"
+                class="eth-icon"
+              />
+              <p class="price">0.041 ETH</p>
+            </div>
+            <div class="misc-info time-left-container">
+              <img
+                src="./images/icon-clock.svg"
+                alt="Clock icon"
+                class="time-left-icon"
+              />
+              <p class="time-left">3 days left</p>
+            </div>
+          </div>
+          <hr class="author-divider" />
+          <div class="misc-info nft-author">
+            <img
+              src="./images/image-avatar.png"
+              alt="Avatar of the author"
+              class="avatar"
+            />
+
+            <p class="author">Creation of <a href="#">Jules Wyvern</a></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/kemenyfa-szu"
+            target="_blank"
+            >kemenyfa-szu</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
