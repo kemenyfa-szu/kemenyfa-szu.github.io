@@ -1,0 +1,15 @@
+@use "sass:color";
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$bright-blue-link-hover: color.adjust($bright-blue, $alpha: -0.35);
+$bright-blue-shadow: color.adjust($bright-blue, $alpha: -0.75);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$white: hsl(0, 0%, 100%);
+
+$fw-normal: 500;
+$fw-bold: 700;
+$fw-boldest: 900;
