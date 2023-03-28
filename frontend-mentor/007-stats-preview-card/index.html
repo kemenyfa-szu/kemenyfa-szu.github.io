@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <section class="stats-preview">
+        <article class="container">
+          <div class="stats">
+            <div class="stats-text">
+              <h4>
+                Get <strong>insights</strong> that help your business grow.
+              </h4>
+              <p>
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
+              </p>
+            </div>
+            <ul class="stats-list">
+              <li class="stat">
+                <p class="quantity">10k+</p>
+                <p class="category">companies</p>
+              </li>
+              <li class="stat">
+                <p class="quantity">314</p>
+                <p class="category">templates</p>
+              </li>
+              <li class="stat">
+                <p class="quantity">12M+</p>
+                <p class="category">queries</p>
+              </li>
+            </ul>
+          </div>
+          <div class="filtered-picture">
+            <picture class="main-picture">
+              <source
+                media="(max-width: 654px)"
+                srcset="./images/image-header-mobile.jpg"
+              />
+              <source
+                media="(min-width: 655px)"
+                srcset="./images/image-header-desktop.jpg"
+              />
+              <img
+                class="prod-pic"
+                src="./images/image-header-desktop.jpg"
+                alt="Happy people using our services"
+                width="540"
+                height="446"
+              />
+            </picture>
+            <div class="filter"></div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/kemenyfa-szu"
+          target="_blank"
+          >kemenyfa-szu</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
